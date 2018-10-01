@@ -28,7 +28,7 @@ module.exports = {
 				else if (!article)
 					res.send(400);
 				else {
-					return article.addAuthor.(req.body.author_id).then((_article) => {
+					return article.addAuthor(req.body.author_id).then((_article) => {
 						return res.send(_article)
 					});
 				}
